@@ -1,0 +1,16 @@
+name: simulate-database
+
+services:
+  bd:
+    image: mysql:8.0
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=129837465lg
+      - MYSQL_DATABASE=iread_db
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
