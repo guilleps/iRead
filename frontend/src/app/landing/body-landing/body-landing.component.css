@@ -1,0 +1,163 @@
+body {
+  background: #ffffff;
+  color: #000;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.texto {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.caratula {
+  margin-top: -150px;
+  font-weight: bold;
+}
+
+.fotocaratula {
+  margin-top: -20px;
+}
+
+.lanzamiento {
+  font-weight: bold;
+}
+
+.doTexto {
+  font-size: 30px;
+}
+
+.roTexto {
+  font-size: large;
+  margin-top: 10px;
+}
+
+.btnCaratula {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ff7a00;
+  border-radius: 39px;
+  width: 150px;
+}
+
+/* === INFO (cards) === */
+.info {
+  background-color: #91d2ee;
+  margin-top: 40px;
+  padding: 60px 0;
+  /* para que respire */
+}
+
+.info-cards {
+  max-width: 1200px; /* 🔑 ancho suficiente */
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+
+  flex-wrap: nowrap; /* 🔑 NO permitir salto */
+}
+
+.info-box p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .info-cards {
+    gap: 30px;
+  }
+
+  .info-box {
+    width: min(360px, 90vw);
+  }
+}
+
+.objetivos {
+  font-size: x-large;
+  font-weight: bolder;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cont1 {
+  background-color: #c9e167;
+}
+
+.cont2 {
+  background: linear-gradient(to right, #c9e167 50%, #e870a6 50%);
+  overflow: visible;
+}
+
+.aaa {
+  background: linear-gradient(to right, #c9e167 50%, #e870a6 50%);
+}
+
+.cont3 {
+  background-color: #e870a6;
+}
+
+.fotoinfo1 {
+  transform: scale(1.2);
+}
+
+fotoinfo {
+  margin-right: 100px;
+}
+
+.info-card {
+  position: relative;
+  width: 520px; /* ajusta según tu diseño */
+  max-width: 95%;
+  height: 150px; /* 🔑 altura del rectángulo */
+}
+
+/* El rectángulo */
+.info-box {
+  position: relative;
+  height: 100%;
+  background: #fff;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 18px 22px 18px 110px; /* 🔑 deja espacio para el círculo */
+}
+
+/* El círculo encima, pegado al lado izquierdo */
+.info-icon {
+  position: absolute;
+  left: -50px; /* 🔑 cuánto “sale” hacia afuera */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+
+  width: 150px; /* 🔑 igual que height del rectángulo */
+  height: 150px;
+  border-radius: 999px;
+  background: #000;
+  display: grid;
+  place-items: center;
+}
+
+.info-icon svg {
+  width: 64px;
+  height: 64px;
+  fill: #fff;
+  display: block;
+}

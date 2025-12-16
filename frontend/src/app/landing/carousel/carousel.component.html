@@ -1,0 +1,64 @@
+<div class="carousel-container">
+  <div class="carousel">
+    <div
+      class="slides"
+      [ngStyle]="{ transform: 'translateX(' + -currentSlide * 100 + '%)' }">
+      <ng-container *ngFor="let t of testimonials; let i = index">
+        <div class="slide">
+          <ng-container
+            *ngTemplateOutlet="
+              testimonialTpl;
+              context: { $implicit: t }
+            "></ng-container>
+        </div>
+      </ng-container>
+    </div>
+
+    <!-- Previous button -->
+    <span class="prev-btn" (click)="prevSlide()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+      </svg>
+    </span>
+
+    <!-- Next button -->
+    <span class="next-btn" (click)="nextSlide()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+      </svg>
+    </span>
+  </div>
+  <div class="indicators">
+    <div
+      class="indicator"
+      *ngFor="let t of testimonials; let i = index"
+      [class.active]="i === currentSlide"
+      (click)="goToSlide(i)"></div>
+  </div>
+</div>
+
+<ng-template #testimonialTpl let-t>
+  <div class="testimonial-card">
+    <div class="box">
+      <p class="quote">“{{ t.text }}”</p>
+      <div class="name">{{ t.name }}</div>
+      <div class="role">{{ t.role }}</div>
+    </div>
+  </div>
+</ng-template>

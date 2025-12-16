@@ -1,0 +1,53 @@
+.navbar .nav-link {
+  color: #000;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 12px;
+  transition: background 0.2s ease, transform 0.2s ease;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.navbar .nav-link:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.navbar .nav-link.active {
+  font-weight: 800;
+}
+
+.navbar .navbar-brand:hover {
+  opacity: 0.95;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+/* Texto “¿No tienes cuenta?” */
+.nav-hint {
+  font-size: 14px;
+  color: #000;
+  opacity: 0.75;
+  font-family: 'League Spartan', sans-serif;
+}
+
+/* Botón negro CTA */
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'League Spartan', sans-serif;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.btn-cta:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}

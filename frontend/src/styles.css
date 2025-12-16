@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'League Spartan', Roboto, Arial, sans-serif;
+}
+
+app-root, .app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
