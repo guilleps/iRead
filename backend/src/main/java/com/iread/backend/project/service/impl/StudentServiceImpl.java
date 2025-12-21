@@ -11,7 +11,6 @@ import com.iread.backend.project.entity.Student;
 import com.iread.backend.project.entity.StudentActivity;
 import com.iread.backend.project.exception.IncorrectAccessWordException;
 import com.iread.backend.project.exception.ResourceNotFoundException;
-import com.iread.backend.project.repository.ActivityRepository;
 import com.iread.backend.project.repository.StoryRepository;
 import com.iread.backend.project.repository.StudentActivityRepository;
 import com.iread.backend.project.repository.StudentRepository;

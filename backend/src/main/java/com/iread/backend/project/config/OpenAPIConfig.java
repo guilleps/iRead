@@ -14,7 +14,7 @@ public class OpenAPIConfig {
     public OpenAPI myOpenAPI() {
 
         Contact contact = new Contact();
-        contact.setEmail("iReadProject@gmail.com");
+        contact.setEmail("iread000learnplaytech@gmail.com");
         contact.setName("Development Team iRead");
         contact.setUrl("https://www.google.com/");
 
